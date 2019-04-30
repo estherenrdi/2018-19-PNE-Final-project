@@ -17,47 +17,63 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
             f = open('index.html', 'r')
             content = f.read()
 
+
         elif self.path.startswith("/listSpecies"):  # listSpecies is select and you send the info
+
             content = """<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>LISTSPECIES</title>
-</head>
-<body style="background-color: lightgreen;">
-<p>This is the list of the species:<br> </p>
-<ul>
-{}
-</ul>
-<a href="/"> Main page </a>
-</body>
-</html>"""
-            # LIST OF ALL THE SPECIES AVAILABLE. This is the client for the list
-            server = "http://rest.ensembl.org"
-            ext = "/info/species?"
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>LISTSPECIES</title>
+        </head>
+        <body style="background-color: lightgreen;">
+        <p>This is the list of the species:<br> </p>
+        <ul>
+        {}
+        </ul>
+        <a href="/"> Main page </a>
+        </body>
+        </html>"""
+            if path == "/listSpecies":
+                server = "http://rest.ensembl.org"
+                ext = "/info/species?"
+                r = requests.get(server + ext, headers={"Content-Type": "application/json"})
+                if not r.ok:
+                    f = open('error.html', 'r')
+                    content = f.read()
+                general = r.json()
+                list_species = """"""
+                for num, index in enumerate(general['species'][:int(len(general['species']))], start=1):
+                    names = index['name']
 
-            r = requests.get(server + ext, headers={"Content-Type": "application/json"})
-
-            if not r.ok:
-                f = open('error.html', 'r')
-                content = f.read()
-            general = r.json()
-
-            # Process the message to make a list for the html file
-            list_species = """"""
-            limit = path.split('=')[1]
-
-            if limit == '':
-                rang = int(len(general['species']))
+                    list_species += "<li>{}) Common name  : {}</li>".format(num, names)
+                content = content.format(list_species)
             else:
-                rang = int(limit)
+                server = "http://rest.ensembl.org"
+                ext = "/info/species?"
+                r = requests.get(server + ext, headers={"Content-Type": "application/json"})
+                if not r.ok:
+                    f = open('error.html', 'r')
+                    content = f.read()
+                general = r.json()
+                list_species = """"""
+                limit = path.split('=')[1]
+                if limit == '':
+                    rang = int(len(general['species']))
+                else:
+                    rang = int(limit)
 
-            for num, index in enumerate(general['species'][:rang], start=1):
-                names = index['name']
-                list_species += "<li>{}) Common name  : {}</li>".format(num, names)
+                for num, index in enumerate(general['species'][:rang], start=1):
+                    names = index['name']
 
-            #  Add the result to the html file
-            content = content.format(list_species)
+                    list_species += "<li>{}) Common name  : {}</li>".format(num, names)
+
+                #  Add the result to the html file
+
+                content = content.format(list_species)
+
+
+
         elif self.path.startswith("/karyotype"):
             # Here I get the list of the species
 
