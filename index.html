@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMS FP</title>
+</head>
+<body style="background-color: lightblue;">
+
+<h1>Information about ensemble project </h1>
+
+<fieldset> <b>List of species</b>
+<p>If you select this option, the list of all the species available in the ensemble database will be shown. Furthermore,
+you can choose a limit, from 0 to 199. </p>
+    <form action="listSpecies" method="get">
+     Do you want a limit? :  <input type="number" name="limit" min="1" max="199"><br>
+    <input value="SUBMIT" type="submit"/>
+    </form>
+</fieldset>
+
+<fieldset> <b>Karyotype information</b>
+    <p>This option will show you the information about the Karyotype of the valid specie (homo_sapiens, xenopus_tropicalis...) that you introduce. </p>
+    <form action="karyotype" method="get">
+        Specie desired:  <input type="text" name="specie"><br>
+    <input value="SUBMIT" type="submit"/>
+    </form>
+</fieldset>
+
+<fieldset> <b>Length of a specific chromosome</b>
+    <p>In this option you can introduce a valid specie and a valid chromosome and its length will be shown</p>
+    <br>Specie and chromosome desired:
+    <form action="chromosomeLength" method="get">
+        Specie:<input type="text" name="specie"> <br>
+        Chromosome: <input type="text" name="chromo"><br>
+    <input value="SUBMIT" type="submit"/>
+    </form>
+</fieldset>
+<fieldset> <b>Return the sequence of a given human gene</b>
+    <p>INTRODUCE A VALID HUMAN GEN AND WE WILL SHOW YOU IT SEQUENCE </p>
+    <br>
+    <form action="geneSeq" method="get">
+        Gene:<input type="text" name="sequence"> <br>
+    <input value="SUBMIT" type="submit"/>
+    </form>
+</fieldset>
+
+</body>
+</html>
