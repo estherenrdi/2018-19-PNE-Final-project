@@ -1,0 +1,120 @@
+BASIC LEVEL
+
+The first endpoint is "/listSpecies":
+
+- If my server receive "http://localhost:8000/listSpecies", you would get the next html file:
+"<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>LISTSPECIES</title>
+        </head>
+        <body style="background-color: lightgreen;">
+        <p>This is the list of the species:<br> </p>
+        <ul>
+        <li>1) Common name  : mus_musculus</li><li>2) Common name  : homo_sapiens</li><li>3) Common name  : cavia_porcellus</li><li>4) Common name  : mus_musculus_cbaj</li><li>5) Common name  : amphilophus_citrinellus</li><li>6) Common name  : anolis_carolinensis</li><li>7) Common name  : cebus_capucinus</li><li>8) Common name  : labrus_bergylta</li><li>9) Common name  : panthera_pardus</li><li>10) Common name  : takifugu_rubripes</li><li>11) Common name  : rhinopithecus_bieti</li><li>12) Common name  : mastacembelus_armatus</li><li>13) Common name  : lepidothrix_coronata</li><li>14) Common name  : fukomys_damarensis</li><li>15) Common name  : monodelphis_domestica</li><li>16) Common name  : equus_asinus_asinus</li><li>17) Common name  : xiphophorus_maculatus</li><li>18) Common name  : apteryx_owenii</li><li>19) Common name  : calidris_pugnax</li><li>20) Common name  : gasterosteus_aculeatus</li><li>21) Common name  : cricetulus_griseus_picr</li><li>22) Common name  : mus_spicilegus</li><li>23) Common name  : oryzias_melastigma</li><li>24) Common name  : nannospalax_galili</li><li>25) Common name  : chelonoidis_abingdonii</li><li>26) Common name  : acanthochromis_polyacanthus</li><li>27) Common name  : scleropages_formosus</li><li>28) Common name  : sarcophilus_harrisii</li><li>29) Common name  : gallus_gallus</li><li>30) Common name  : latimeria_chalumnae</li><li>31) Common name  : numida_meleagris</li><li>32) Common name  : mus_musculus_aj</li><li>33) Common name  : poecilia_latipinna</li><li>34) Common name  : phascolarctos_cinereus</li><li>35) Common name  : mus_musculus_fvbnj</li><li>36) Common name  : cricetulus_griseus_chok1gshd</li><li>37) Common name  : mus_musculus_lpj</li><li>38) Common name  : heterocephalus_glaber_female</li><li>39) Common name  : calidris_pygmaea</li><li>40) Common name  : anas_platyrhynchos_platyrhynchos</li><li>41) Common name  : saimiri_boliviensis_boliviensis</li><li>42) Common name  : lonchura_striata_domestica</li><li>43) Common name  : callithrix_jacchus</li><li>44) Common name  : ovis_aries</li><li>45) Common name  : papio_anubis</li><li>46) Common name  : macaca_fascicularis</li><li>47) Common name  : notechis_scutatus</li><li>48) Common name  : capra_hircus</li><li>49) Common name  : fundulus_heteroclitus</li><li>50) Common name  : ursus_americanus</li><li>51) Common name  : mus_musculus_nzohlltj</li><li>52) Common name  : notamacropus_eugenii</li><li>53) Common name  : tursiops_truncatus</li><li>54) Common name  : gambusia_affinis</li><li>55) Common name  : felis_catus</li><li>56) Common name  : pan_paniscus</li><li>57) Common name  : nomascus_leucogenys</li><li>58) Common name  : chlorocebus_sabaeus</li><li>59) Common name  : bos_taurus</li><li>60) Common name  : amphiprion_ocellaris</li><li>61) Common name  : mus_pahari</li><li>62) Common name  : coturnix_japonica</li><li>63) Common name  : carlito_syrichta</li><li>64) Common name  : apteryx_haastii</li><li>65) Common name  : macaca_nemestrina</li><li>66) Common name  : sphenodon_punctatus</li><li>67) Common name  : anser_brachyrhynchus</li><li>68) Common name  : anabas_testudineus</li><li>69) Common name  : lepisosteus_oculatus</li><li>70) Common name  : rhinopithecus_roxellana</li><li>71) Common name  : spermophilus_dauricus</li><li>72) Common name  : poecilia_formosa</li><li>73) Common name  : scophthalmus_maximus</li><li>74) Common name  : mus_spretus</li><li>75) Common name  : petromyzon_marinus</li><li>76) Common name  : xenopus_tropicalis</li><li>77) Common name  : gopherus_agassizii</li><li>78) Common name  : bison_bison_bison</li><li>79) Common name  : mus_musculus_129s1svimj</li><li>80) Common name  : ictalurus_punctatus</li><li>81) Common name  : octodon_degus</li><li>82) Common name  : colobus_angolensis_palliatus</li><li>83) Common name  : manacus_vitellinus</li><li>84) Common name  : astatotilapia_calliptera</li><li>85) Common name  : prolemur_simus</li><li>86) Common name  : mus_musculus_wsbeij</li><li>87) Common name  : dasypus_novemcinctus</li><li>88) Common name  : kryptolebias_marmoratus</li><li>89) Common name  : mus_musculus_dba2j</li><li>90) Common name  : urocitellus_parryii</li><li>91) Common name  : gorilla_gorilla</li><li>92) Common name  : microcebus_murinus</li><li>93) Common name  : mandrillus_leucophaeus</li><li>94) Common name  : pogona_vitticeps</li><li>95) Common name  : neovison_vison</li><li>96) Common name  : parus_major</li><li>97) Common name  : macaca_mulatta</li><li>98) Common name  : ornithorhynchus_anatinus</li><li>99) Common name  : oryzias_latipes_hni</li><li>100) Common name  : eptatretus_burgeri</li><li>101) Common name  : canis_lupus_dingo</li><li>102) Common name  : danio_rerio</li><li>103) Common name  : mus_musculus_nodshiltj</li><li>104) Common name  : stegastes_partitus</li><li>105) Common name  : chinchilla_lanigera</li><li>106) Common name  : mus_musculus_c57bl6nj</li><li>107) Common name  : astyanax_mexicanus</li><li>108) Common name  : ictidomys_tridecemlineatus</li><li>109) Common name  : vicugna_pacos</li><li>110) Common name  : crocodylus_porosus</li><li>111) Common name  : zonotrichia_albicollis</li><li>112) Common name  : amphiprion_percula</li><li>113) Common name  : panthera_tigris_altaica</li><li>114) Common name  : meleagris_gallopavo</li><li>115) Common name  : piliocolobus_tephrosceles</li><li>116) Common name  : marmota_marmota_marmota</li><li>117) Common name  : serinus_canaria</li><li>118) Common name  : apteryx_rowi</li><li>119) Common name  : salvator_merianae</li><li>120) Common name  : choloepus_hoffmanni</li><li>121) Common name  : mus_caroli</li><li>122) Common name  : sorex_araneus</li><li>123) Common name  : taeniopygia_guttata</li><li>124) Common name  : theropithecus_gelada</li><li>125) Common name  : hippocampus_comes</li><li>126) Common name  : cavia_aperea</li><li>127) Common name  : periophthalmus_magnuspinnatus</li><li>128) Common name  : aotus_nancymaae</li><li>129) Common name  : myotis_lucifugus</li><li>130) Common name  : sus_scrofa</li><li>131) Common name  : propithecus_coquereli</li><li>132) Common name  : drosophila_melanogaster</li><li>133) Common name  : pundamilia_nyererei</li><li>134) Common name  : echinops_telfairi</li><li>135) Common name  : junco_hyemalis</li><li>136) Common name  : vulpes_vulpes</li><li>137) Common name  : pan_troglodytes</li><li>138) Common name  : cricetulus_griseus_crigri</li><li>139) Common name  : seriola_dumerili</li><li>140) Common name  : erinaceus_europaeus</li><li>141) Common name  : loxodonta_africana</li><li>142) Common name  : neolamprologus_brichardi</li><li>143) Common name  : pelodiscus_sinensis</li><li>144) Common name  : microtus_ochrogaster</li><li>145) Common name  : mola_mola</li><li>146) Common name  : ursus_maritimus</li><li>147) Common name  : dromaius_novaehollandiae</li><li>148) Common name  : oryctolagus_cuniculus</li><li>149) Common name  : xiphophorus_couchianus</li><li>150) Common name  : cyprinodon_variegatus</li><li>151) Common name  : ciona_intestinalis</li><li>152) Common name  : pygocentrus_nattereri</li><li>153) Common name  : esox_lucius</li><li>154) Common name  : ochotona_princeps</li><li>155) Common name  : mustela_putorius_furo</li><li>156) Common name  : ciona_savignyi</li><li>157) Common name  : meriones_unguiculatus</li><li>158) Common name  : paramormyrops_kingsleyae</li><li>159) Common name  : jaculus_jaculus</li><li>160) Common name  : dipodomys_ordii</li><li>161) Common name  : cercocebus_atys</li><li>162) Common name  : oreochromis_niloticus</li><li>163) Common name  : pongo_abelii</li><li>164) Common name  : chrysemys_picta_bellii</li><li>165) Common name  : maylandia_zebra</li><li>166) Common name  : equus_caballus</li><li>167) Common name  : mesocricetus_auratus</li><li>168) Common name  : pteropus_vampyrus</li><li>169) Common name  : seriola_lalandi_dorsalis</li><li>170) Common name  : cyanistes_caeruleus</li><li>171) Common name  : mus_musculus_pwkphj</li><li>172) Common name  : gadus_morhua</li><li>173) Common name  : haplochromis_burtoni</li><li>174) Common name  : saccharomyces_cerevisiae</li><li>175) Common name  : cynoglossus_semilaevis</li><li>176) Common name  : canis_familiaris</li><li>177) Common name  : monopterus_albus</li><li>178) Common name  : ailuropoda_melanoleuca</li><li>179) Common name  : castor_canadensis</li><li>180) Common name  : melopsittacus_undulatus</li><li>181) Common name  : peromyscus_maniculatus_bairdii</li><li>182) Common name  : ficedula_albicollis</li><li>183) Common name  : bos_mutus</li><li>184) Common name  : mus_musculus_balbcj</li><li>185) Common name  : mus_musculus_casteij</li><li>186) Common name  : rattus_norvegicus</li><li>187) Common name  : otolemur_garnettii</li><li>188) Common name  : heterocephalus_glaber_male</li><li>189) Common name  : caenorhabditis_elegans</li><li>190) Common name  : poecilia_reticulata</li><li>191) Common name  : oryzias_latipes_hsok</li><li>192) Common name  : tetraodon_nigroviridis</li><li>193) Common name  : nothoprocta_perdicaria</li><li>194) Common name  : tupaia_belangeri</li><li>195) Common name  : mus_musculus_c3hhej</li><li>196) Common name  : poecilia_mexicana</li><li>197) Common name  : oryzias_latipes</li><li>198) Common name  : procavia_capensis</li><li>199) Common name  : mus_musculus_akrj</li>
+        </ul>
+        <a href="/"> Main page </a>
+        </body>
+        </html>"
+
+- If my server receive "http://localhost:8000/listSpecies?limit=", you would get the next html file:
+
+"<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>LISTSPECIES</title>
+        </head>
+        <body style="background-color: lightgreen;">
+        <p>This is the list of the species:<br> </p>
+        <ul>
+        <li>1) Common name  : ficedula_albicollis</li><li>2) Common name  : castor_canadensis</li><li>3) Common name  : ciona_intestinalis</li><li>4) Common name  : pogona_vitticeps</li><li>5) Common name  : manacus_vitellinus</li><li>6) Common name  : mus_spicilegus</li><li>7) Common name  : zonotrichia_albicollis</li><li>8) Common name  : dipodomys_ordii</li><li>9) Common name  : nomascus_leucogenys</li><li>10) Common name  : mus_musculus_fvbnj</li><li>11) Common name  : fundulus_heteroclitus</li><li>12) Common name  : mus_spretus</li><li>13) Common name  : poecilia_reticulata</li><li>14) Common name  : amphiprion_ocellaris</li><li>15) Common name  : meriones_unguiculatus</li><li>16) Common name  : saccharomyces_cerevisiae</li><li>17) Common name  : paramormyrops_kingsleyae</li><li>18) Common name  : jaculus_jaculus</li><li>19) Common name  : mus_musculus_c3hhej</li><li>20) Common name  : amphiprion_percula</li><li>21) Common name  : erinaceus_europaeus</li><li>22) Common name  : phascolarctos_cinereus</li><li>23) Common name  : acanthochromis_polyacanthus</li><li>24) Common name  : lepidothrix_coronata</li><li>25) Common name  : neovison_vison</li><li>26) Common name  : cavia_porcellus</li><li>27) Common name  : equus_caballus</li><li>28) Common name  : dasypus_novemcinctus</li><li>29) Common name  : haplochromis_burtoni</li><li>30) Common name  : macaca_fascicularis</li><li>31) Common name  : coturnix_japonica</li><li>32) Common name  : melopsittacus_undulatus</li><li>33) Common name  : heterocephalus_glaber_male</li><li>34) Common name  : aotus_nancymaae</li><li>35) Common name  : ursus_maritimus</li><li>36) Common name  : prolemur_simus</li><li>37) Common name  : poecilia_latipinna</li><li>38) Common name  : kryptolebias_marmoratus</li><li>39) Common name  : apteryx_haastii</li><li>40) Common name  : salvator_merianae</li><li>41) Common name  : propithecus_coquereli</li><li>42) Common name  : equus_asinus_asinus</li><li>43) Common name  : cavia_aperea</li><li>44) Common name  : anas_platyrhynchos_platyrhynchos</li><li>45) Common name  : danio_rerio</li><li>46) Common name  : peromyscus_maniculatus_bairdii</li><li>47) Common name  : serinus_canaria</li><li>48) Common name  : mesocricetus_auratus</li><li>49) Common name  : ictalurus_punctatus</li><li>50) Common name  : gambusia_affinis</li><li>51) Common name  : monopterus_albus</li><li>52) Common name  : lonchura_striata_domestica</li><li>53) Common name  : felis_catus</li><li>54) Common name  : ornithorhynchus_anatinus</li><li>55) Common name  : apteryx_owenii</li><li>56) Common name  : sphenodon_punctatus</li><li>57) Common name  : poecilia_mexicana</li><li>58) Common name  : drosophila_melanogaster</li><li>59) Common name  : sarcophilus_harrisii</li><li>60) Common name  : maylandia_zebra</li><li>61) Common name  : mus_musculus_wsbeij</li><li>62) Common name  : labrus_bergylta</li><li>63) Common name  : parus_major</li><li>64) Common name  : numida_meleagris</li><li>65) Common name  : petromyzon_marinus</li><li>66) Common name  : lepisosteus_oculatus</li><li>67) Common name  : xiphophorus_couchianus</li><li>68) Common name  : nannospalax_galili</li><li>69) Common name  : ochotona_princeps</li><li>70) Common name  : choloepus_hoffmanni</li><li>71) Common name  : pan_troglodytes</li><li>72) Common name  : saimiri_boliviensis_boliviensis</li><li>73) Common name  : mustela_putorius_furo</li><li>74) Common name  : gopherus_agassizii</li><li>75) Common name  : urocitellus_parryii</li><li>76) Common name  : mus_musculus_pwkphj</li><li>77) Common name  : oryzias_latipes</li><li>78) Common name  : pteropus_vampyrus</li><li>79) Common name  : chelonoidis_abingdonii</li><li>80) Common name  : rhinopithecus_bieti</li><li>81) Common name  : astyanax_mexicanus</li><li>82) Common name  : neolamprologus_brichardi</li><li>83) Common name  : mus_musculus_casteij</li><li>84) Common name  : echinops_telfairi</li><li>85) Common name  : taeniopygia_guttata</li><li>86) Common name  : loxodonta_africana</li><li>87) Common name  : cebus_capucinus</li><li>88) Common name  : anolis_carolinensis</li><li>89) Common name  : ailuropoda_melanoleuca</li><li>90) Common name  : spermophilus_dauricus</li><li>91) Common name  : sus_scrofa</li><li>92) Common name  : mus_musculus</li><li>93) Common name  : mus_musculus_nzohlltj</li><li>94) Common name  : calidris_pygmaea</li><li>95) Common name  : notamacropus_eugenii</li><li>96) Common name  : hippocampus_comes</li><li>97) Common name  : bos_taurus</li><li>98) Common name  : bison_bison_bison</li><li>99) Common name  : mus_musculus_aj</li><li>100) Common name  : oryzias_latipes_hsok</li><li>101) Common name  : pan_paniscus</li><li>102) Common name  : gorilla_gorilla</li><li>103) Common name  : dromaius_novaehollandiae</li><li>104) Common name  : apteryx_rowi</li><li>105) Common name  : canis_familiaris</li><li>106) Common name  : nothoprocta_perdicaria</li><li>107) Common name  : cyprinodon_variegatus</li><li>108) Common name  : cricetulus_griseus_picr</li><li>109) Common name  : vicugna_pacos</li><li>110) Common name  : cyanistes_caeruleus</li><li>111) Common name  : mastacembelus_armatus</li><li>112) Common name  : macaca_nemestrina</li><li>113) Common name  : mus_caroli</li><li>114) Common name  : colobus_angolensis_palliatus</li><li>115) Common name  : ovis_aries</li><li>116) Common name  : mandrillus_leucophaeus</li><li>117) Common name  : astatotilapia_calliptera</li><li>118) Common name  : oryzias_latipes_hni</li><li>119) Common name  : gadus_morhua</li><li>120) Common name  : eptatretus_burgeri</li><li>121) Common name  : carlito_syrichta</li><li>122) Common name  : oryzias_melastigma</li><li>123) Common name  : cercocebus_atys</li><li>124) Common name  : gasterosteus_aculeatus</li><li>125) Common name  : poecilia_formosa</li><li>126) Common name  : mus_musculus_dba2j</li><li>127) Common name  : mus_musculus_c57bl6nj</li><li>128) Common name  : junco_hyemalis</li><li>129) Common name  : cricetulus_griseus_chok1gshd</li><li>130) Common name  : xenopus_tropicalis</li><li>131) Common name  : canis_lupus_dingo</li><li>132) Common name  : tursiops_truncatus</li><li>133) Common name  : piliocolobus_tephrosceles</li><li>134) Common name  : pygocentrus_nattereri</li><li>135) Common name  : microcebus_murinus</li><li>136) Common name  : amphilophus_citrinellus</li><li>137) Common name  : caenorhabditis_elegans</li><li>138) Common name  : tetraodon_nigroviridis</li><li>139) Common name  : pundamilia_nyererei</li><li>140) Common name  : xiphophorus_maculatus</li><li>141) Common name  : mus_pahari</li><li>142) Common name  : cricetulus_griseus_crigri</li><li>143) Common name  : chinchilla_lanigera</li><li>144) Common name  : procavia_capensis</li><li>145) Common name  : mus_musculus_balbcj</li><li>146) Common name  : heterocephalus_glaber_female</li><li>147) Common name  : calidris_pugnax</li><li>148) Common name  : chlorocebus_sabaeus</li><li>149) Common name  : capra_hircus</li><li>150) Common name  : otolemur_garnettii</li><li>151) Common name  : latimeria_chalumnae</li><li>152) Common name  : anser_brachyrhynchus</li><li>153) Common name  : macaca_mulatta</li><li>154) Common name  : callithrix_jacchus</li><li>155) Common name  : scophthalmus_maximus</li><li>156) Common name  : periophthalmus_magnuspinnatus</li><li>157) Common name  : pelodiscus_sinensis</li><li>158) Common name  : panthera_pardus</li><li>159) Common name  : octodon_degus</li><li>160) Common name  : anabas_testudineus</li><li>161) Common name  : cynoglossus_semilaevis</li><li>162) Common name  : notechis_scutatus</li><li>163) Common name  : mus_musculus_cbaj</li><li>164) Common name  : oreochromis_niloticus</li><li>165) Common name  : theropithecus_gelada</li><li>166) Common name  : microtus_ochrogaster</li><li>167) Common name  : takifugu_rubripes</li><li>168) Common name  : crocodylus_porosus</li><li>169) Common name  : oryctolagus_cuniculus</li><li>170) Common name  : bos_mutus</li><li>171) Common name  : vulpes_vulpes</li><li>172) Common name  : stegastes_partitus</li><li>173) Common name  : sorex_araneus</li><li>174) Common name  : mus_musculus_akrj</li><li>175) Common name  : seriola_dumerili</li><li>176) Common name  : gallus_gallus</li><li>177) Common name  : mus_musculus_nodshiltj</li><li>178) Common name  : chrysemys_picta_bellii</li><li>179) Common name  : papio_anubis</li><li>180) Common name  : marmota_marmota_marmota</li><li>181) Common name  : pongo_abelii</li><li>182) Common name  : scleropages_formosus</li><li>183) Common name  : ictidomys_tridecemlineatus</li><li>184) Common name  : ciona_savignyi</li><li>185) Common name  : rhinopithecus_roxellana</li><li>186) Common name  : esox_lucius</li><li>187) Common name  : meleagris_gallopavo</li><li>188) Common name  : mus_musculus_lpj</li><li>189) Common name  : fukomys_damarensis</li><li>190) Common name  : panthera_tigris_altaica</li><li>191) Common name  : seriola_lalandi_dorsalis</li><li>192) Common name  : mola_mola</li><li>193) Common name  : ursus_americanus</li><li>194) Common name  : tupaia_belangeri</li><li>195) Common name  : monodelphis_domestica</li><li>196) Common name  : rattus_norvegicus</li><li>197) Common name  : mus_musculus_129s1svimj</li><li>198) Common name  : homo_sapiens</li><li>199) Common name  : myotis_lucifugus</li>
+        </ul>
+        <a href="/"> Main page </a>
+        </body>
+        </html>"
+
+- If my server receive "http://localhost:8000/listSpecies?limit=10", you would get the next html file:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LISTSPECIES</title>
+</head>
+<body style="background-color: lightgreen;">
+<p>This is the list of the species:<br> </p>
+<ul>
+<li>1) Common name  : ficedula_albicollis</li><li>2) Common name  : castor_canadensis</li><li>3) Common name  : ciona_intestinalis</li><li>4) Common name  : pogona_vitticeps</li><li>5) Common name  : manacus_vitellinus</li><li>6) Common name  : mus_spicilegus</li><li>7) Common name  : zonotrichia_albicollis</li><li>8) Common name  : dipodomys_ordii</li><li>9) Common name  : nomascus_leucogenys</li><li>10) Common name  : mus_musculus_fvbnj</li>
+</ul>
+<a href="/"> Main page </a>
+</body>
+</html>
+
+The second endpoint is "/karyotype":
+
+- If my server receive "http://localhost:8000/karyotype?specie=mouse", you would get the next html file:
+
+"<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>KARYOTYPE</title>
+                        </head>
+                        <body style="background-color: lightpink;">
+                        <p>Here is show the karyotype of the specie you have selected</p>
+                        ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', 'X', 'Y']<br>
+                        <a href="/"> Main page </a>
+                        </body>
+                        </html>
+                        "
+- If my server receive "http://localhost:8000/karyotype?specie=ficedula_albicollis", you would get the next html file:
+
+"<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>KARYOTYPE</title>
+                        </head>
+                        <body style="background-color: lightpink;">
+                        <p>Here is show the karyotype of the specie you have selected</p>
+                        Sorry, the karyotype of the specie you have selected is not in the database.
+ Try again! <br>
+                        <a href="/"> Main page </a>
+                        </body>
+                        </html>
+                        "
+
+The third endpoint is "/chromosomeLength":
+
+- If my server receive "http://localhost:8000/chromosomeLength?specie=mouse&chromo=18", you would get the next html file:
+
+"<!DOCTYPE html>
+                                    <html lang="en">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <title>CHROMO/LEN</title>
+                                    </head>
+                                    <body style="background-color: lightyellow;">
+                                    <p>You have selected the specie mouse and the chromosome 18</p>
+                                    <br>
+                                    <p>The length of it is : 90702639</p>
+                                    <a href="/"> Main page </a>
+                                    </body>
+                                    </html>
+                                   "
+
+- If my server receive "http://localhost:8000/chromosomeLength?specie=mouse&chromo=", you would get the next html file:
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ERROR PAGE</title>
+</head>
+<body style="background-color: red;">
+<h2>Sorry, something was wrong.</h2>
+<p><b>Come back to the page and try again!</b></p>
+<a href="/"> Main page </a>
+</body>
+</html>"
